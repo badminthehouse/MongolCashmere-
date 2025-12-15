@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Бүх Бүтээгдэхүүн | Монгол Кашмер</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light custom-cashmere-nav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="logo.png" alt="Монгол Кашмерын Лого" class="cashmere-logo-img" style="height: 50px; width: auto;">
+                    <h1>Монгол Кашмер</h1>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Нүүр</a></li>
+                        <li class="nav-item"><a class="nav-link" href="womens.html">Эмэгтэй</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mens.html">Эрэгтэй</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accessories.html">Аксессуар</a></li>
+                        <li class="nav-item"><a class="nav-link" href="history.html">Түүх</a></li>
+                        <li class="nav-item"><a class="nav-link" href="production.html">Үйлдвэрлэл</a></li>
+                        <li class="nav-item"><a class="nav-link" href="care.html">Арчилгаа</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Холбоо Барих</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-sm cashmere-login-btn" href="login.html">Нэвтрэх</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5 cashmere-title">Бүх Ноолууран Бүтээгдэхүүн</h1>
+
+        <div class="row">
+            
+            <div class="col-lg-3 mb-4">
+                <div class="card p-3 shadow-sm sticky-top" style="top: 20px;">
+                    <h5 class="mb-3 text-primary">🛍️ Шүүлтүүрүүд</h5>
+                    <form>
+                        <div class="mb-3">
+                            <label class="form-label fw-bold">Ангилал</label>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="catWomen">
+                                <label class="form-check-label" for="catWomen">Эмэгтэй</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="catMen">
+                                <label class="form-check-label" for="catMen">Эрэгтэй</label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" type="checkbox" id="catAcc">
+                                <label class="form-check-label" for="catAcc">Аксессуар</label>
+                            </div>
+                        </div>
+
+                        <hr>
+                        
+                        <div class="mb-3">
+                            <label for="priceRange" class="form-label fw-bold">Үнэ (₮)</label>
+                            <input type="range" class="form-range" min="50000" max="1500000" step="10000" id="priceRange">
+                            <small class="form-text text-muted">Хамгийн их үнэ: 1,500,000₮</small>
+                        </div>
+                        
+                        <hr>
+                        
+                        <div class="mb-3">
+                            <label for="colorSelect" class="form-label fw-bold">Өнгө</label>
+                            <select class="form-select" id="colorSelect">
+                                <option selected>Бүгд</option>
+                                <option>Бор</option>
+                                <option>Цагаан</option>
+                                <option>Хар</option>
+                                <option>Ногоон</option>
+                            </select>
+                        </div>
+                        
+                        <div class="d-grid mt-4">
+                            <button type="submit" class="btn btn-primary cashmere-btn">Шүүх</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-9">
+                <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4">
+                    
+                    <div class="col product-card" data-category="women" data-price="250000">
+                        <div class="card h-100 shadow-sm text-center">
+                            <img src="31.jfif" class="card-img-top" alt="Эмэгтэй Ноолууран Цамц" style="height: 250px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Зузаан Ноолууран Цамц</h5>
+                                <p class="card-text text-muted">Ангилал: Эрэгтэй | Өнгө: Цагаан</p>
+                                <h4 class="text-danger fw-bold">250,000 ₮</h4>
+                                <a href="product_detail.html" class="btn btn-sm btn-outline-primary">Үзэх</a>
+                                <button class="btn btn-sm btn-success ms-2">🛒 Сагслах</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col product-card" data-category="men" data-price="890000">
+                        <div class="card h-100 shadow-sm text-center">
+                            <img src="32.jfif" class="card-img-top" alt="Эрэгтэй Ноолууран Пальто" style="height: 250px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Чамин Пальто</h5>
+                                <p class="card-text text-muted">Ангилал: Эмэгтэй | Өнгө: Бор</p>
+                                <h4 class="text-danger fw-bold">890,000 ₮</h4>
+                                <a href="product_detail.html" class="btn btn-sm btn-outline-primary">Үзэх</a>
+                                <button class="btn btn-sm btn-success ms-2">🛒 Сагслах</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col product-card" data-category="accessory" data-price="75000">
+                        <div class="card h-100 shadow-sm text-center">
+                            <img src="33.jfif" class="card-img-top" alt="Ноолууран Ороолт" style="height: 250px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Тансаг Ороолт</h5>
+                                <p class="card-text text-muted">Ангилал: Аксессуар | Өнгө: Цэнхэр, Бор, Хар</p>
+                                <h4 class="text-danger fw-bold">75,000 ₮</h4>
+                                <a href="product_detail.html" class="btn btn-sm btn-outline-primary">Үзэх</a>
+                                <button class="btn btn-sm btn-success ms-2">🛒 Сагслах</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="col product-card" data-category="women" data-price="320000">
+                        <div class="card h-100 shadow-sm text-center">
+                            <img src="34.jfif" class="card-img-top" alt="Эмэгтэй Ноолууран Кардиган" style="height: 250px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Урт Кардиган</h5>
+                                <p class="card-text text-muted">Ангилал: Эмэгтэй | Өнгө: Саарал</p>
+                                <h4 class="text-danger fw-bold">320,000 ₮</h4>
+                                <a href="product_detail.html" class="btn btn-sm btn-outline-primary">Үзэх</a>
+                                <button class="btn btn-sm btn-success ms-2">🛒 Сагслах</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col product-card" data-category="accessory" data-price="120000">
+                        <div class="card h-100 shadow-sm text-center">
+                            <img src="35.jfif" class="card-img-top" alt="Ноолууран Бээлий" style="height: 250px; object-fit: cover;">
+                            <div class="card-body">
+                                <h5 class="card-title">Зөөлөн Бээлий</h5>
+                                <p class="card-text text-muted">Ангилал: Аксессуар | Өнгө: Цагаан, Бор</p>
+                                <h4 class="text-danger fw-bold">120,000 ₮</h4>
+                                <a href="product_detail.html" class="btn btn-sm btn-outline-primary">Үзэх</a>
+                                <button class="btn btn-sm btn-success ms-2">🛒 Сагслах</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+                
+                <nav class="mt-5" aria-label="Page navigation example">
+                    <ul class="pagination justify-content-center">
+                        <li class="page-item disabled"><a class="page-link" href="#">Өмнөх</a></li>
+                        <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                        <li class="page-item"><a class="page-link" href="#">2</a></li>
+                        <li class="page-item"><a class="page-link" href="#">3</a></li>
+                        <li class="page-item"><a class="page-link" href="#">Дараах</a></li>
+                    </ul>
+                </nav>
+
+            </div>
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">MONGOL CASHMERE &copy; 2025 Он</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Өнөөдрийн огноо: 2025.12.16 <span id="cru" class="fw-bold"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>

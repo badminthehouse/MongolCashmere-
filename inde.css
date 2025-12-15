@@ -1,0 +1,66 @@
+/* style.css */
+
+/* Логоны нэрийг онцлох */
+.cashmere-logo-text-title {
+    color: #8b0000; /* Dark Red, эсвэл таны брэндийн өнгө */
+    font-weight: 700;
+}
+
+/* Навигацийн хэсгийг өөрчлөх (хэрэв та хүсвэл) */
+.custom-cashmere-nav {
+    border-bottom: 2px solid #ddd;
+}
+
+/* Нэвтрэх товчийг ялгарах өнгөтэй болгох */
+.cashmere-login-btn {
+    background-color: #8b0000;
+    color: white !important;
+    border: none;
+    margin-left: 15px;
+}
+.cashmere-login-btn:hover {
+    background-color: #a52a2a;
+}
+
+/* Каруселийн гарчгийг ялгаруулах */
+.carousel-caption h1 {
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Үндсэн ангиллуудын зураг, холбоос */
+.category-link {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+.category-link img {
+    width: 200px; /* Энд жишээ хэмжээ */
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid white;
+    transition: transform 0.3s ease;
+}
+.category-link:hover img {
+    transform: scale(1.05);
+}
+.cashmere-title {
+    color: #8b0000;
+    font-weight: 600;
+}
+.cashmere-btn {
+    background-color: #8b0000;
+    border-color: #8b0000;
+}
+.cashmere-btn:hover {
+    background-color: #a52a2a;
+    border-color: #a52a2a;
+}
+
+/* Сошиал Медиа Икон (FOOTER хэсэгт ашигласан) */
+/* Bootstrap Icons (bi bi-*) ашигласан тул зөвхөн hover эффект нэмлээ */
+.footer a {
+    transition: color 0.3s;
+}
+.footer a:hover {
+    color: #a52a2a !important; 
+}

@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="mn">
+    <style type="text/css">
+        /* style.css */
+
+/* Логоны нэрийг онцлох - Энэ классыг index.html-ийн <style> дотор оруулсан тул энд нэмэх шаардлагагүй. */
+/* Гэсэн ч бүх CSS-ийг style.css дотор байрлуулах нь зөв арга. */
+/* .cashmere-logo-title-fancy { ... } */ 
+
+/* Ерөнхий навигацийн загвар */
+.custom-cashmere-nav {
+    border-bottom: 2px solid #ddd;
+}
+
+/* Нэвтрэх товчийг ялгарах өнгөтэй болгох */
+.cashmere-login-btn {
+    background-color: #8b0000;
+    color: white !important;
+    border: none;
+    margin-left: 15px;
+}
+.cashmere-login-btn:hover {
+    background-color: #a52a2a;
+}
+
+/* Үндсэн ангиллуудын зураг, холбоос */
+.category-link {
+    text-decoration: none;
+    color: #333;
+    transition: color 0.3s;
+}
+.category-link img {
+    width: 200px; 
+    height: 200px;
+    object-fit: cover;
+    border: 5px solid white;
+    transition: transform 0.3s ease;
+}
+.category-link:hover img {
+    transform: scale(1.05);
+}
+.cashmere-title {
+    color: #8b0000;
+    font-weight: 600;
+}
+.cashmere-btn {
+    background-color: #8b0000;
+    border-color: #8b0000;
+}
+.cashmere-btn:hover {
+    background-color: #a52a2a;
+    border-color: #a52a2a;
+}
+    </style>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Монгол Кашмер - Шилдэг Ноолуур</title>
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="моо" href="style.css"> 
+    <link rel="icon" href="logo.png" type="image/png"> 
+
+    <style>
+        .cashmere-logo-title-fancy {
+            /* Таны өгсөн .div1 классын загварыг ашиглав */
+            font-family: 'Great Vibes', cursive;
+            font-size: 2.5rem; 
+            font-weight: 400;
+            color: #4B0082; 
+            letter-spacing: 1px;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2);
+            /* Байршлын засвар */
+            margin-bottom: 0 !important; 
+            margin-left: 0.5rem;
+            line-height: 1; /* Логоны хажууд зэрэгцүүлэхэд туслана */
+        }
+    </style>
+</head>
+<body>
+    <div id="fb-root"></div>
+    <script async defer crossorigin="anonymous" src="https://connect.facebook.net/mn_MN/sdk.js#xfbml=1&version=v18.0" nonce="[random_string]"></script>
+    
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light custom-cashmere-nav">
+            <div class="container">
+               <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="logo.png" alt="Монгол Кашмерын Лого" class="cashmere-logo-img" style="height: 50px; width: auto;">
+                    
+                    <h1 class="cashmere-logo-title-fancy">Монгол Кашмер</h1>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">Нүүр</a></li>
+                        <li class="nav-item"><a class="nav-link" href="womens.html">Эмэгтэй</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mens.html">Эрэгтэй</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accessories.html">Аксессуар</a></li>
+                        <li class="nav-item"><a class="nav-link" href="history.html">Түүх</a></li>
+                        <li class="nav-item"><a class="nav-link" href="production.html">Үйлдвэрлэл</a></li>
+                        <li class="nav-item"><a class="nav-link" href="care.html">Арчилгаа</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Холбоо Барих</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-sm cashmere-login-btn" href="login.html">Нэвтрэх</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="cashmereCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active"> 
+                    <img src="dd.jfif" class="d-block w-100" alt="Шинэ Коллекц" style="max-height: 800px; object-fit: cover;">
+                    <div class="carousel-caption d-none d-md-block">
+                        <h1 class="display-4">2026 Оны Шинэ Коллекц</h1>
+                        <p>Зөөлөн, дулаахан, тансаг ноолууран бүтээгдэхүүн.</p>
+                        <a href="catalogue.html" class="btn btn-lg btn-light cashmere-banner-btn">Дэлгэрэнгүй Үзэх</a> 
+                        </div>
+                </div>
+                <div class="carousel-item">
+                     <img src="ss.jpg" class="d-block w-100" alt="Хямдрал" style="max-height: 800px; object-fit: cover;">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#cashmereCarousel" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#cashmereCarousel" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </section>
+
+        <section class="container py-5">
+            <h2 class="text-center mb-5 cashmere-title">Манай Үндсэн Ангиллууд</h2>
+            <div class="row text-center">
+                <div class="col-md-4 mb-4">
+                    <a href="womens.html" class="category-link d-block">
+                        <img src="cashm2.jfif" class="img-fluid rounded-circle shadow" alt="Эмэгтэй">
+                        <h4 class="mt-3">Эмэгтэй Хувцас</h4>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="mens.html" class="category-link d-block">
+                        <img src="cashm1.jfif" class="img-fluid rounded-circle shadow" alt="Эрэгтэй">
+                        <h4 class="mt-3">Эрэгтэй Хувцас</h4>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="accessories.html" class="category-link d-block">
+                        <img src="cashm3.jfif" class="img-fluid rounded-circle shadow" alt="Аксессуар">
+                        <h4 class="mt-3">Гоёлын Аксессуар</h4>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-light py-5">
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-md-7">
+                        <h3 class="cashmere-title">Монгол Кашмер: Уламжлал ба Чанар</h3>
+                        <p>Монгол ноолуур нь дэлхийд хамгийн нимгэн, дулаахан чанараараа алдартай. Манай бүтээгдэхүүнүүд нь малчдын уламжлалт арга ба үйлдвэрийн орчин үеийн технологийг хослуулан бүтээгддэг.</p>
+                        <a href="history.html" class="btn btn-primary cashmere-btn">Түүхийг Дэлгэрэнгүй Унших</a> 
+                    </div>
+                    
+                    <div class="col-md-5 text-center mt-4 mt-md-0">
+                        <h4 class="mb-3 text-primary">Биднийг Дагаарай!</h4>
+                        <div class="d-inline-block p-3 border rounded shadow-sm">
+                            <div class="fb-like" 
+                                data-href="https://www.facebook.com/profile.php?id=100063775454436" 
+                                data-width="" 
+                                data-layout="button_count" 
+                                data-action="like" 
+                                data-size="large" 
+                                data-share="true">
+                            </div>
+                            <p class="text-muted small mt-2">Вебсайттай холбогдох лайк товчлуур.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row align-items-center">
+                <div class="col-md-4">
+                    <p class="mb-0">MONGOL CASHMERE &copy; 2025 Он</p>
+                    <p class="small">Дизайн: Оюутны Бие Даалт №2</p>
+                </div>
+                
+                <div class="col-md-4 text-center">
+                    <h5 class="text-white mb-3">Холбогдох: 7777-****<Br> 8888-****</h5>
+                    <a href="URL_facebook" target="_blank" class="text-white mx-2 fs-4" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+                    <a href="URL_instagram" target="_blank" class="text-white mx-2 fs-4" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+                    <a href="URL_twitter" target="_blank" class="text-white mx-2 fs-4" aria-label="Twitter"><i class="bi bi-twitter-x"></i></a>
+                </div>
+                
+                <div class="col-md-4 text-md-end">
+                    <p class="mb-0">Өнөөдрийн огноо: <span id="cru" class="fw-bold">2025.12.16</span></p> 
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>

@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Холбоо Барих | Монгол Кашмер</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css"> 
+    <link rel="icon" href="logo.png" type="image/png">
+</head>
+<body>
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light custom-cashmere-nav">
+            <div class="container">
+                <a class="navbar-brand d-flex align-items-center" href="index.html">
+                    <img src="logo.png" alt="Монгол Кашмерын Лого" class="cashmere-logo-img">
+                   <h1>Монгол Кашмер</h1>
+                </a>
+                
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Нүүр</a></li>
+                        <li class="nav-item"><a class="nav-link" href="womens.html">Эмэгтэй</a></li>
+                        <li class="nav-item"><a class="nav-link" href="mens.html">Эрэгтэй</a></li>
+                        <li class="nav-item"><a class="nav-link" href="accessories.html">Аксессуар</a></li>
+                        <li class="nav-item"><a class="nav-link" href="history.html">Түүх</a></li>
+                        <li class="nav-item"><a class="nav-link" href="production.html">Үйлдвэрлэл</a></li>
+                        <li class="nav-item"><a class="nav-link" href="care.html">Арчилгаа</a></li>
+                        <li class="nav-item"><a class="nav-link active" aria-current="page" href="contact.html">Холбоо Барих</a></li>
+                        <li class="nav-item"><a class="nav-link btn btn-sm cashmere-login-btn" href="login.html">Нэвтрэх</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main class="container my-5">
+        <h1 class="text-center mb-5 cashmere-title">Бидэнтэй Холбоо Барих</h1>
+
+        <div class="row">
+            
+            <div class="col-lg-6 mb-5">
+                <div class="card p-4 shadow-lg h-100">
+                    <h3 class="mb-4 text-primary">📩 Мессеж Илгээх</h3>
+                    
+                    <form id="contactForm">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Нэр / Байгууллагын нэр</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="emailAddress" class="form-label">И-мэйл хаяг</label>
+                            <input type="email" class="form-control" id="emailAddress" placeholder="name@example.com" required>
+                        </div>
+                        
+                        <div class="mb-3">
+                            <label for="subject" class="form-label">Гарчиг/Зорилго</label>
+                            <select class="form-select" id="subject" required>
+                                <option selected disabled value="">Сэдэв сонгоно уу...</option>
+                                <option>Бүтээгдэхүүний талаарх мэдээлэл</option>
+                                <option>Хамтын ажиллагаа</option>
+                                <option>Борлуулалтын дараах үйлчилгээ</option>
+                                <option>Бусад</option>
+                            </select>
+                        </div>
+                        
+                        <div class="mb-4">
+                            <label for="messageText" class="form-label">Таны мессеж</label>
+                            <textarea class="form-control" id="messageText" rows="4" required></textarea>
+                        </div>
+                        
+                        <div class="d-grid">
+                            <button type="submit" class="btn btn-primary cashmere-btn">Илгээх</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+
+            <div class="col-lg-6 mb-5">
+                <div class="card p-4 shadow-lg h-100">
+                    <h3 class="mb-4 text-primary">📍 Манай Байршил ба Хаяг</h3>
+                    
+                    <p class="fw-bold mb-1">Монгол Кашмерын Төв Дэлгүүр</p>
+                    <p class="mb-4">Улаанбаатар хот, Баянгол дүүрэг, 17-р хороо, Мандах ИС</p>
+
+                    <p><i class="bi bi-telephone-fill"></i> Утас: (976) 7711-XXXX</p>
+                    <p><i class="bi bi-envelope-fill"></i> И-мэйл: info@mongolcashmere.mn</p>
+                    <p class="mb-4"><i class="bi bi-clock-fill"></i> Ажиллах цаг: Даваа - Ням (10:00 - 20:00)</p>
+
+                    <h4 class="mt-4 mb-3">Дэлгүүрийн Байршил</h4>
+                    <div class="ratio ratio-4x3 rounded shadow-sm">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2673.9893014047125!2d106.88869137683162!3d47.91724446647405!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5d96ed28690b3f8d%3A0xe7089c924db8703d!2z0JzQsNC90LTQsNGFINC40YUg0YHRg9GA0LPRg9GD0LvRjA!5e0!3m2!1sen!2smn!4v1765831572411!5m2!1sen!2smn" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+
+    <footer class="bg-dark text-white mt-5">
+        <div class="container py-4">
+            <div class="row">
+                <div class="col-md-6">
+                    <p class="mb-0">MONGOL CASHMERE &copy; 2025 Он</p>
+                </div>
+                <div class="col-md-6 text-md-end">
+                    <p class="mb-0">Өнөөдрийн огноо: <span id="cru" class="fw-bold"></span></p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script> 
+</body>
+</html>
